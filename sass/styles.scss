@@ -1,0 +1,56 @@
+@use "reset";
+@use "global";
+@import "responsive";
+
+main {
+  margin: 1rem;
+}
+
+.card {
+  padding: 3rem;
+  &__logo {
+    padding-bottom: 2rem;
+  }
+  &__title {
+    color: white;
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display";
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+  }
+  &__description {
+    color: white;
+    line-height: 2;
+    margin-bottom: 2rem;
+  }
+  &__link {
+    text-decoration: none;
+    background-color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 2rem;
+  }
+}
+
+.card--sedan {
+  border-radius: 2rem 2rem 0 0;
+  background-color: rgb(226, 133, 37);
+  .card__link--sedan {
+    color: rgb(226, 133, 37);
+  }
+}
+
+.card--suv {
+  background-color: rgb(1, 105, 114);
+  .card__link--suv {
+    color: rgb(1, 105, 114);
+  }
+}
+
+.card--luxury {
+  border-radius: 0 0 2rem 2rem;
+  background-color: rgb(0, 64, 63);
+  .card__link--luxury {
+    color: rgb(0, 64, 63);
+  }
+}
